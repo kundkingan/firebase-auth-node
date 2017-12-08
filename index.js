@@ -15,9 +15,9 @@ class FirebaseAuth {
 		this.admin = admin;
 		this.firebase.initializeApp(firebaseConfig);
 
-		if (nameOfAdmin) 
+		if (nameOfAdmin)
 			this.admin.initializeApp({credential: this.admin.credential.cert(serviceKey)}, nameOfAdmin);
-		else 
+		else
 			this.admin.initializeApp({credential: this.admin.credential.cert(serviceKey)});
 	}
 
