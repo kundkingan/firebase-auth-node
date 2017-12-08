@@ -1,0 +1,10 @@
+checks:
+    javascript: true
+
+build:
+    environment:
+        node: v9.0.0
+
+    tests:
+        override:
+            - eslint-run index.js

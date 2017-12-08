@@ -1,0 +1,42 @@
+{
+  "name": "firebase-auth-node",
+  "description": "A firebase auth for backend node",
+  "version": "1.0.0",
+  "author": {
+    "name": "David Andersson",
+    "email": "david_andersson96@outlook.com"
+  },
+  "keywords": [
+    "firebase",
+    "firebase-config",
+    "firebase-admin",
+    "firebase-auth",
+    "firebase-email-password",
+    "firebase-idToken",
+    "auth",
+    "node",
+    "service-key"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kundkinga/firebase-auth-node.git"
+  },
+  "scripts": {
+    "test-auth": "nyc --reporter=html --reporter=text mocha \"test/*.js\"",
+    "eslint": "eslint index.js",
+    "codecov": "nyc report --reporter=lcov > coverage.lcov && codecov --token=01dad809-c804-4595-a287-cbfc7bbe650d"
+  },
+  "dependencies": {
+    "firebase": "^4.8.0",
+    "firebase-admin": "^5.5.1"
+  },
+  "devDependencies": {
+    "codecov": "^3.0.0",
+    "eslint": "^4.12.1",
+    "eslint-plugin-react": "^7.5.1",
+    "mocha": "^4.0.1",
+    "nyc": "^11.4.0"
+  }
+}

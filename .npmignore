@@ -1,0 +1,8 @@
+test
+firebase-config
+.eslintrc.json
+.eslintignore
+.travis.yml
+.nyc_output
+coverage
+coverage.lcov
