@@ -26,7 +26,7 @@
   "scripts": {
     "test-auth": "nyc --reporter=html --reporter=text mocha \"test/*.js\"",
     "eslint": "eslint index.js",
-    "codecov": "nyc report --reporter=lcov > coverage.lcov && codecov --token=01dad809-c804-4595-a287-cbfc7bbe650d"
+    "codecov": "nyc report --reporter=lcov > coverage.lcov && codecov --token=f6e0097e-08ca-4f73-8e48-213c07e3e714"
   },
   "dependencies": {
     "firebase": "^4.8.0",
