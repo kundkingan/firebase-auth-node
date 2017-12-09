@@ -21,7 +21,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/kundkinga/firebase-auth-node.git"
+    "url": "git://github.com/kundkingan/firebase-auth-node.git"
   },
   "scripts": {
     "test-auth": "nyc --reporter=html --reporter=text mocha \"test/*.js\"",
