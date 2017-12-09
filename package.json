@@ -1,7 +1,7 @@
 {
   "name": "firebase-auth-node",
   "description": "A firebase auth for backend node",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": {
     "name": "David Andersson",
     "email": "david_andersson96@outlook.com"
