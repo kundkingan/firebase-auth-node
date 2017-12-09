@@ -74,7 +74,7 @@ nameOfAdmin is optional and is used if you have multiple instances of firebase a
 
 ### `firebaseAuth.signIn(email, password)`
 
-Tries to sign in through firebase with the provided email and password. The type of `email` and `password` is string, if not an error is thrown. This function returns a Promise that you need to handle.
+Tries to sign with the provided email and password, if success it will return an object with the idToken and uid of the user. The type of `email` and `password` is string, if not an error is thrown. This function returns a Promise that you need to handle.
 
 ### `firebaseAuth.authToken(idToken)`
 

@@ -8,10 +8,10 @@ let assert = require('assert');
 describe('test', () => {
 	let firebaseAuth = new FirebaseAuth(firebaseConfig, serviceKey);
 
-  it('signIn should return a string with idToken', () => {
+  it('signIn should return an object with idToken and uid', () => {
   	return firebaseAuth.signIn('test@test.test', 'testtest')
   		.then((res) => {
-  			assert('string', typeof(res));
+  			assert('object', typeof(res));
   		});
   });
 
@@ -24,11 +24,12 @@ describe('test', () => {
 
   it('authToken should return true if token is valid', () => {
     return firebaseAuth.signIn('test@test.test', 'testtest')
-      .then((idToken) => {
-        return firebaseAuth.authToken(idToken)
+      .then((user) => {
+        return firebaseAuth.authToken(user.idToken)
           .then(() => {
             return true;
           });
+          return true;
       });
   })
   
