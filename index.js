@@ -52,12 +52,7 @@ class FirebaseAuth {
 	 * @rejects {Object} Returns an object with errors if rejected
 	 */
 	authToken(idToken) {
-		return this.admin.auth().verifyIdToken(idToken)
-			.then(() => {
-				return true;
-			}).catch((error) => {
-				throw { code: error.code, message: error.message };
-			});
+		return this.admin.auth().verifyIdToken(idToken);
 	}
 }
 

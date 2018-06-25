@@ -24,7 +24,7 @@
     "url": "git://github.com/kundkingan/firebase-auth-node.git"
   },
   "scripts": {
-    "test-auth": "nyc --reporter=html --reporter=text mocha \"test/*.js\"",
+    "test-auth": "nyc --reporter=html --reporter=text mocha \"test/*.js\" --exit",
     "eslint": "eslint index.js",
     "codecov": "nyc report --reporter=lcov > coverage.lcov && codecov --token=f6e0097e-08ca-4f73-8e48-213c07e3e714"
   },
